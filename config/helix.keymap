@@ -88,11 +88,13 @@
   macros {
     walk: walk {
       compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
       bindings = <&macro_press &kp W>;
     };
 
     run: run {
       compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
       bindings = <&macro_press &kp LSHIFT>, <&macro_press &kp W>;
     };
   };
